@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Your Password</title>
+    <style>
+        body {
+            
+             /* Apply a background image to the body */
+    
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+        background-image: url("OIP (16).jpg"); /* Replace with your image path */
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        background-attachment: fixed; /* Optionally, fix the background on scroll */
+    
+
+    /* Ensure responsiveness on mobile devices */
+    @media (max-width: 768px) {
+        body {
+            background-attachment: scroll; /* Disable fixed background on mobile for better performance */
+        }
+    }
+
+    /* Add content or other styles here */
+    .content {
+        color: yellowgreen;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Reset Your Password</h2>
+    <p>Please authenticate using your fingerprint to reset your password.</p>
+
+    <button id="fingerprint-auth-btn" class="btn">Authenticate with Fingerprint</button>
+
+    <a href="v1.html">back home</a>
+
+
+    <form id="password-reset-form" style="display:none;" action="/submit-password-reset" method="POST">
+        <div class="form-group">
+            <label for="new-password">Enter your new password:</label>
+            <input type="password" id="new-password" name="new-password" placeholder="New Password" required>
+        </div>
+        <button type="submit" class="btn">Submit New Password</button>
+    </form>
+</div>
+
+<script>
+// WebAuthn API for fingerprint authentication (simplified version)
+document.getElementById('fingerprint-auth-btn').addEventListener('click', function() {
+    // Initiate fingerprint (biometric) authentication via WebAuthn
+    authenticateWithFingerprint().then(result => {
+        if (result.success) {
+            document.getElementById('password-reset-form').style.display = 'block';
+            document.getElementById('fingerprint-auth-btn').style.display = 'none';
+        } else {
+            alert("Fingerprint authentication failed. Please try again.");
+        }
+    });
+});
+
+async function authenticateWithFingerprint() {
+    // WebAuthn logic to authenticate using the fingerprint sensor
+    try {
+        const publicKeyCredentialRequestOptions = {
+            challenge: new Uint8Array([/* random challenge from the server */]),
+            allowCredentials: [{ id: /* user's registered credential ID */, type: "public-key" }],
+            timeout: 60000
+        };
+        
+        const credential = await navigator.credentials.get({ publicKey: publicKeyCredentialRequestOptions });
+        
+        // Send the credential to the server to verify
+        const response = await fetch('/verify-fingerprint', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ credential })
+        });
+        
+        const result = await response.json();
+        return result;  // e.g., { success: true }
+
+    } catch (error) {
+        console.error("Fingerprint authentication failed", error);
+        return { success: false };
+    }
+}
+</script>
+
+</body>
+</html>
