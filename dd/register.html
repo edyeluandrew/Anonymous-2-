@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cimpo styles Signup Form</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ensure the body takes up the full viewport height */
+            background-image: url("OIP (16).jpg"); /* Replace with your image path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-attachment: fixed; /* Optionally, fix the background on scroll */
+        }
+         /* Ensure responsiveness on mobile devices */
+    @media (max-width: 768px) {
+        body {
+            background-attachment: scroll; /* Disable fixed background on mobile for better performance */
+        }
+    }
+
+    /* Add content or other styles here */
+    .content {
+        color: yellowgreen;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        .signup-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-group .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Sign Up here</h2>
+        <form action="register.php" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <div class="error" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error" id="passwordError"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+                <a href="v1.html">back home</a>
+
+            </div>
+        </form>
+    </div>
+
+    <a href="v1.html">back home</a>
+
+    <script>
+        // Form validation
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            let valid = true;
+            
+            // Validate name
+            const name = document.getElementById('fullName').value;
+            if (name.trim() === '') {
+                document.getElementById('nameError').textContent = 'Please enter your full name.';
+                valid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+            
+            // Validate email
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+                valid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+
+            // Validate password
+            const password = document.getElementById('password').value;
+            if (password.length < 6) {
+                document.getElementById('passwordError').textContent = 'Password must be at least 6 characters.';
+                valid = false;
+            } else {
+                document.getElementById('passwordError').textContent = '';
+            }
+
+            // Validate confirm password
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (confirmPassword !== password) {
+                document.getElementById('confirmPasswordError').textContent = 'Passwords do not match.';
+                valid = false;
+            } else {
+                document.getElementById('confirmPasswordError').textContent = '';
+            }
+
+            // Validate address
+            const address = document.getElementById('address').value;
+            if (address.trim() === '') {
+                document.getElementById('addressError').textContent = 'Please enter your address.';
+                valid = false;
+            } else {
+                document.getElementById('addressError').textContent = '';
+            }
+
+            if (!valid) {
+                event.preventDefault(); // Prevent form submission if there are errors
+            }
+        });
+    </script>
+
+</body>
+</html>

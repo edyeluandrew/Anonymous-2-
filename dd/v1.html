@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Cimpo styles</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    /* Apply a background image to the body */
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Ensure the body takes up the full viewport height */
+        background-image: url("OIP (16).jpg"); /* Replace with your image path */
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center center; /* Center the image */
+        background-repeat: no-repeat; /* Prevent image repetition */
+        background-attachment: fixed; /* Optionally, fix the background on scroll */
+    }
+
+    /* Ensure responsiveness on mobile devices */
+    @media (max-width: 768px) {
+        body {
+            background-attachment: scroll; /* Disable fixed background on mobile for better performance */
+        }
+    }
+
+    /* Add content or other styles here */
+    .content {
+        color: yellowgreen;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar {
+  background-image: url("OIP (10).jpeg"); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire navbar */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 10px 0; /* Optional: Adds padding to the navbar */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; /* Change text color to contrast with the background */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Cimpo styles</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="v2.html">products</a></li>
+            <li class="nav-item"><a class="nav-link" href="v4.html">cart</a></li>
+            <li class="nav-item"><a class="nav-link" href="v5.html">contact us</a></li>
+            <li class="nav-item"><a class="nav-link" href="fingers.html">Forgot password?</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html">register</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h1>Welcome to Cimpo styles</h1>
+    <p>Your one-stop shop in Mbarara city, Western uganda.</p>
+</div>
+<a href="v2.html">Shop Now</a>
+<p>already have an account?</p><a href="login.html">Login</a>
+<h2 class="mt-5">Follow Us</h2>
+<div class="social-media-links">
+    <a href="https://facebook.com/YourPage" target="edyelu andrew">Facebook</a>
+    <a href="https://instagram.com/YourPage" target="edyelu andrew">Instagram</a>
+    <a href="https://twitter.com/YourPage" target="okile's finest">Twitter</a>
+    <a href="https://linkedin.com/YourPage" target="edyelu andrew">linkedin</a>
+    <a href="https://tiktok.com/YourPage" target="andy moves">tiktok</a>
+    
+  </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
