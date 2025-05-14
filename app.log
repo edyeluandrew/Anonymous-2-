@@ -1,0 +1,233 @@
+2025-05-01 07:54:49,380 - __main__ - INFO - Available models: ['models/chat-bison-001', 'models/text-bison-001', 'models/embedding-gecko-001', 'models/gemini-1.0-pro-vision-latest', 'models/gemini-pro-vision', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-pro-001', 'models/gemini-1.5-pro-002', 'models/gemini-1.5-pro', 'models/gemini-1.5-flash-latest', 'models/gemini-1.5-flash-001', 'models/gemini-1.5-flash-001-tuning', 'models/gemini-1.5-flash', 'models/gemini-1.5-flash-002', 'models/gemini-1.5-flash-8b', 'models/gemini-1.5-flash-8b-001', 'models/gemini-1.5-flash-8b-latest', 'models/gemini-1.5-flash-8b-exp-0827', 'models/gemini-1.5-flash-8b-exp-0924', 'models/gemini-2.5-pro-exp-03-25', 'models/gemini-2.5-pro-preview-03-25', 'models/gemini-2.5-flash-preview-04-17', 'models/gemini-2.0-flash-exp', 'models/gemini-2.0-flash', 'models/gemini-2.0-flash-001', 'models/gemini-2.0-flash-exp-image-generation', 'models/gemini-2.0-flash-lite-001', 'models/gemini-2.0-flash-lite', 'models/gemini-2.0-flash-lite-preview-02-05', 'models/gemini-2.0-flash-lite-preview', 'models/gemini-2.0-pro-exp', 'models/gemini-2.0-pro-exp-02-05', 'models/gemini-exp-1206', 'models/gemini-2.0-flash-thinking-exp-01-21', 'models/gemini-2.0-flash-thinking-exp', 'models/gemini-2.0-flash-thinking-exp-1219', 'models/learnlm-1.5-pro-experimental', 'models/learnlm-2.0-flash-experimental', 'models/gemma-3-1b-it', 'models/gemma-3-4b-it', 'models/gemma-3-12b-it', 'models/gemma-3-27b-it', 'models/embedding-001', 'models/text-embedding-004', 'models/gemini-embedding-exp-03-07', 'models/gemini-embedding-exp', 'models/aqa', 'models/imagen-3.0-generate-002', 'models/gemini-2.0-flash-live-001']
+2025-05-01 07:54:49,380 - __main__ - INFO - Gemini AI initialized successfully with model models/gemini-1.5-flash-001
+2025-05-01 07:54:49,382 - __main__ - INFO - 
+========================================
+2025-05-01 07:54:49,383 - __main__ - INFO - Starting KAB AI Chatbot (Model: models/gemini-1.5-flash-001)
+2025-05-01 07:54:49,383 - __main__ - INFO - • Port: 5000
+2025-05-01 07:54:49,383 - __main__ - INFO - • Debug mode: True
+2025-05-01 07:54:49,384 - __main__ - INFO - • Cache timeout: 300s
+2025-05-01 07:54:49,384 - __main__ - INFO - • Timeout: 60s
+2025-05-01 07:54:49,384 - __main__ - INFO - ========================================
+
+2025-05-01 07:54:49,459 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 07:54:49,461 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 07:54:49,465 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 07:54:52,503 - __main__ - INFO - Available models: ['models/chat-bison-001', 'models/text-bison-001', 'models/embedding-gecko-001', 'models/gemini-1.0-pro-vision-latest', 'models/gemini-pro-vision', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-pro-001', 'models/gemini-1.5-pro-002', 'models/gemini-1.5-pro', 'models/gemini-1.5-flash-latest', 'models/gemini-1.5-flash-001', 'models/gemini-1.5-flash-001-tuning', 'models/gemini-1.5-flash', 'models/gemini-1.5-flash-002', 'models/gemini-1.5-flash-8b', 'models/gemini-1.5-flash-8b-001', 'models/gemini-1.5-flash-8b-latest', 'models/gemini-1.5-flash-8b-exp-0827', 'models/gemini-1.5-flash-8b-exp-0924', 'models/gemini-2.5-pro-exp-03-25', 'models/gemini-2.5-pro-preview-03-25', 'models/gemini-2.5-flash-preview-04-17', 'models/gemini-2.0-flash-exp', 'models/gemini-2.0-flash', 'models/gemini-2.0-flash-001', 'models/gemini-2.0-flash-exp-image-generation', 'models/gemini-2.0-flash-lite-001', 'models/gemini-2.0-flash-lite', 'models/gemini-2.0-flash-lite-preview-02-05', 'models/gemini-2.0-flash-lite-preview', 'models/gemini-2.0-pro-exp', 'models/gemini-2.0-pro-exp-02-05', 'models/gemini-exp-1206', 'models/gemini-2.0-flash-thinking-exp-01-21', 'models/gemini-2.0-flash-thinking-exp', 'models/gemini-2.0-flash-thinking-exp-1219', 'models/learnlm-1.5-pro-experimental', 'models/learnlm-2.0-flash-experimental', 'models/gemma-3-1b-it', 'models/gemma-3-4b-it', 'models/gemma-3-12b-it', 'models/gemma-3-27b-it', 'models/embedding-001', 'models/text-embedding-004', 'models/gemini-embedding-exp-03-07', 'models/gemini-embedding-exp', 'models/aqa', 'models/imagen-3.0-generate-002', 'models/gemini-2.0-flash-live-001']
+2025-05-01 07:54:52,515 - __main__ - INFO - Gemini AI initialized successfully with model models/gemini-1.5-flash-001
+2025-05-01 07:54:52,531 - __main__ - INFO - 
+========================================
+2025-05-01 07:54:52,533 - __main__ - INFO - Starting KAB AI Chatbot (Model: models/gemini-1.5-flash-001)
+2025-05-01 07:54:52,534 - __main__ - INFO - • Port: 5000
+2025-05-01 07:54:52,534 - __main__ - INFO - • Debug mode: True
+2025-05-01 07:54:52,535 - __main__ - INFO - • Cache timeout: 300s
+2025-05-01 07:54:52,537 - __main__ - INFO - • Timeout: 60s
+2025-05-01 07:54:52,546 - __main__ - INFO - ========================================
+
+2025-05-01 07:54:52,595 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 07:54:52,598 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 07:55:15,767 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 07:55:15] "GET / HTTP/1.1" 200 -
+2025-05-01 07:55:15,923 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 07:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 07:55:15,943 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 07:55:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 07:55:31,170 - __main__ - INFO - Processing query: explain machine learning simply...
+2025-05-01 07:55:33,626 - __main__ - INFO - API call succeeded in 2.46s (attempt 1)
+2025-05-01 07:55:33,627 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 07:55:33] "POST /chat HTTP/1.1" 200 -
+2025-05-01 07:55:46,743 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 07:55:46] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:01:55,702 - __main__ - INFO - Processing query: what is a dataset...
+2025-05-01 08:01:57,935 - __main__ - INFO - API call succeeded in 2.23s (attempt 1)
+2025-05-01 08:01:57,937 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:01:57] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:02:28,952 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:02:28] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:03:24,860 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:03:24] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:03:45,473 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:03:45] "GET / HTTP/1.1" 200 -
+2025-05-01 08:03:45,493 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:03:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:03:45,504 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:03:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 08:04:02,640 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:04:02] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:06:52,835 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:06:52] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:22:07,740 - __main__ - INFO - Processing query: what are the types of machine learning...
+2025-05-01 08:22:10,072 - __main__ - INFO - API call succeeded in 2.33s (attempt 1)
+2025-05-01 08:22:10,073 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:22:10] "POST /chat HTTP/1.1" 200 -
+2025-05-01 08:27:41,994 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Wisdom\\Desktop\\chatbot\\app.py', reloading
+2025-05-01 08:27:44,225 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 08:27:47,785 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:27:47,833 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 08:27:47,839 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 08:27:59,801 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Wisdom\\Desktop\\chatbot\\app.py', reloading
+2025-05-01 08:27:59,974 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 08:28:02,114 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:28:02,155 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 08:28:02,158 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 08:28:15,161 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Wisdom\\Desktop\\chatbot\\app.py', reloading
+2025-05-01 08:28:15,343 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 08:28:17,305 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:28:17,341 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 08:28:17,344 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 08:28:19,615 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Wisdom\\Desktop\\chatbot\\app.py', reloading
+2025-05-01 08:28:19,803 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 08:28:21,987 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:28:22,226 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 08:28:22,234 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 08:33:55,393 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:33:55,452 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 08:33:55,453 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 08:33:55,456 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 08:33:57,503 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 08:33:57,535 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 08:33:57,538 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 08:34:13,548 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:13] "GET / HTTP/1.1" 200 -
+2025-05-01 08:34:13,576 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-01 08:34:13,582 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:13] "GET /static/script.js HTTP/1.1" 200 -
+2025-05-01 08:34:15,671 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:15] "GET / HTTP/1.1" 200 -
+2025-05-01 08:34:15,727 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:34:15,735 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 08:34:16,857 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:16] "GET / HTTP/1.1" 200 -
+2025-05-01 08:34:16,888 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:34:16,920 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 08:34:41,430 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:41] "GET / HTTP/1.1" 200 -
+2025-05-01 08:34:41,453 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:34:41,457 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:34:41] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 08:35:58,009 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:35:58] "GET / HTTP/1.1" 200 -
+2025-05-01 08:35:58,603 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:35:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:35:58,605 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:35:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 08:35:58,797 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:35:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 08:36:00,936 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:36:00] "GET / HTTP/1.1" 200 -
+2025-05-01 08:36:01,077 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:36:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 08:36:01,078 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 08:36:01] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:00:30,794 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 09:00:30,851 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 09:00:30,852 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 09:00:30,854 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:00:32,792 - __main__ - INFO - Initialized with models/gemini-1.5-flash-001
+2025-05-01 09:00:32,834 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:00:32,841 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:00:42,035 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:42] "GET / HTTP/1.1" 200 -
+2025-05-01 09:00:42,199 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:00:42,210 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:42] "GET /static/script.js HTTP/1.1" 200 -
+2025-05-01 09:00:42,418 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 09:00:44,196 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:44] "GET / HTTP/1.1" 200 -
+2025-05-01 09:00:44,296 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:00:44,326 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:00:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:01:01,412 - __main__ - ERROR - Error: 'NoneType' object is not subscriptable
+2025-05-01 09:01:01,416 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:01] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-05-01 09:01:48,124 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "GET / HTTP/1.1" 200 -
+2025-05-01 09:01:48,163 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:01:48,230 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:01:48,519 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "GET / HTTP/1.1" 200 -
+2025-05-01 09:01:48,610 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:01:48,616 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:01:48] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:02:04,438 - __main__ - ERROR - Error: 'NoneType' object is not subscriptable
+2025-05-01 09:02:04,441 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:02:04] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-05-01 09:06:23,642 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Wisdom\\Desktop\\chatbot\\app.py', reloading
+2025-05-01 09:06:25,878 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:06:28,045 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:06:28,049 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:07:01,249 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 09:07:01,250 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 09:07:01,253 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:07:03,384 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:07:03,389 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:07:51,212 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:07:51] "GET / HTTP/1.1" 200 -
+2025-05-01 09:07:51,353 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:07:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:07:51,371 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:07:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:08:11,740 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:08:11] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:08:46,916 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:08:46] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:09:05,696 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:09:05] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:09:34,243 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:09:34] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:10:28,674 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:10:28] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:10:55,445 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:10:55] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:11:17,351 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:11:17] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:11:31,107 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:11:31] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:13:38,043 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 09:13:38,044 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 09:13:38,046 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:13:40,431 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:13:40,437 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:13:45,197 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:13:45] "GET / HTTP/1.1" 200 -
+2025-05-01 09:13:45,374 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:13:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:13:45,375 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:13:45] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:13:45,591 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:13:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 09:14:27,978 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:14:27] "GET / HTTP/1.1" 200 -
+2025-05-01 09:14:28,010 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:14:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:14:28,014 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:14:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:15:39,594 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 09:15:39,595 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 09:15:39,598 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:15:41,727 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:15:41,732 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:15:48,865 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:15:48] "GET / HTTP/1.1" 200 -
+2025-05-01 09:15:49,193 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:15:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:15:49,267 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:15:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:15:49,419 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:15:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 09:16:51,280 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:16:51] "GET / HTTP/1.1" 200 -
+2025-05-01 09:16:51,308 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:16:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:16:51,315 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:16:51] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:23:53,856 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.40.40:5000
+2025-05-01 09:23:53,857 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 09:23:53,859 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 09:23:55,952 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 09:23:55,955 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 09:24:02,919 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:02] "GET / HTTP/1.1" 200 -
+2025-05-01 09:24:03,091 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:24:03,093 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:03] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:24:03,340 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 09:24:08,302 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:08] "GET / HTTP/1.1" 200 -
+2025-05-01 09:24:08,349 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:24:08,377 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:24:16,502 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:16] "GET / HTTP/1.1" 200 -
+2025-05-01 09:24:16,647 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 09:24:16,653 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 09:24:32,111 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:24:32] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:25:43,145 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:25:43] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:26:29,797 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:26:29] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:27:10,034 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:27:10] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:28:14,686 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:28:14] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:30:25,521 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:30:25] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:32:21,506 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:32:21] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:33:37,069 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:33:37] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:33:54,741 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:33:54] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:34:08,361 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:34:08] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:34:22,204 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:34:22] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:34:33,703 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:34:33] "POST /chat HTTP/1.1" 200 -
+2025-05-01 09:34:56,666 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 09:34:56] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:47:56,006 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.15.2.255:5000
+2025-05-01 10:47:56,020 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-01 10:47:56,023 - werkzeug - INFO -  * Restarting with stat
+2025-05-01 10:47:57,762 - werkzeug - WARNING -  * Debugger is active!
+2025-05-01 10:47:57,765 - werkzeug - INFO -  * Debugger PIN: 745-542-615
+2025-05-01 10:48:14,148 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:14] "GET / HTTP/1.1" 200 -
+2025-05-01 10:48:14,353 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:14] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 10:48:14,358 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 10:48:14,655 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-01 10:48:15,962 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:15] "GET / HTTP/1.1" 200 -
+2025-05-01 10:48:16,097 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-01 10:48:16,124 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:16] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-05-01 10:48:39,018 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:48:39] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:54:26,837 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:54:26] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:55:56,315 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:55:56] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:56:08,410 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:56:08] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:56:20,571 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:56:20] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:56:29,406 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:56:29] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:56:38,365 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:56:38] "POST /chat HTTP/1.1" 200 -
+2025-05-01 10:57:11,401 - werkzeug - INFO - 127.0.0.1 - - [01/May/2025 10:57:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
